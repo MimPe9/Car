@@ -6,7 +6,7 @@ public class CarLight : MonoBehaviour
 {
     public GameObject light;
 
-    void Update()
+    /*void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -16,19 +16,19 @@ public class CarLight : MonoBehaviour
         {
             light.SetActive(false);
         }
-    }
+    }*/
     /*void Start()
     {
         light = GetComponent<GameObject>();
-    }
+    }*/
     public void Activelight()
     {
         light.SetActive(true);
     }
 
-    void inActivelight()
+    public void inActivelight()
     {
         light.SetActive(false);
     }
-    */
+    
 }
