@@ -5,6 +5,7 @@ using UnityEngine;
 public class CarLight : MonoBehaviour
 {
     public GameObject light;
+    //public GameObject gameObject;
 
     /*void Update()
     {
@@ -21,6 +22,8 @@ public class CarLight : MonoBehaviour
     {
         light = GetComponent<GameObject>();
     }*/
+
+ 
     public void Activelight()
     {
         light.SetActive(true);
@@ -30,5 +33,17 @@ public class CarLight : MonoBehaviour
     {
         light.SetActive(false);
     }
-    
+
+    public void ActiveColor(Material material)
+    {
+        gameObject.GetComponent<Renderer>().material = material;
+    }
+
+    public void inActiveColor(Material material)
+    {
+        gameObject.GetComponent<Renderer>().material = material;
+    }
+
+
+
 }
